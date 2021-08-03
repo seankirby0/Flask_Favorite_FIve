@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Here are my favorite teams in order:</h1>
+<ol>
+    {% for f in favorite_teams %}
+        {% if f == 'chicago bulls' %}
+            <h1>{{ f }}</h1>
+        {% else %}
+            <li>{{ f }}</li>
+        {% endif %}
+    {% endfor %}
+</ol>
+
+{% endblock content %}
